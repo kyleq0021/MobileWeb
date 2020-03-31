@@ -1,0 +1,185 @@
+body, html {
+  border: 0px;
+  margin: 0px;
+  padding: 1vmin;
+  padding-top: 0px;
+  font-family: sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.topNav a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.topNav a:visited {
+  color: white;
+}
+
+.topNav a:hover {
+  color: gray;
+  text-decoration:overline;
+  text-decoration-style:wavy;
+}
+.topNav a:active {
+    color: black;
+}
+
+.topNav{
+  display: flex;
+  background-color: #add8e6;
+}
+
+.mainTitleText{
+  display: flex;
+  justify-content:flex-start;
+  font-family: 'Roboto Condensed';
+}
+
+.mainText{
+  margin-top:300px;
+  display: flex;
+  justify-content:center;
+  font-family: 'Dancing Script';font-style: bold;
+}
+
+.Pistachio{
+  position: relative;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 4px;
+}
+
+.Chocolate{
+  position: relative;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 4px;
+}
+
+.Twinkie{
+  position: relative;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 4px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Twinkie:hover .image{
+  opacity: 0.3;
+}
+
+.Twinkie:hover .middle {
+  opacity: 1;
+}
+
+.Pistachio:hover .image{
+  opacity: 0.3;
+}
+
+.Pistachio:hover .middle {
+  opacity: 1;
+}
+
+.Chocolate:hover .image{
+  opacity: 0.3;
+}
+
+.Chocolate:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #add8e6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+img {
+  width:500px;height:auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+figure {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 469px) {
+
+
+  body {
+    background-color: white;
+  }
+
+  img {
+    max-width: 75%;
+    margin-bottom: 10px;
+  }
+
+  figure {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  body {
+    color: black;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 150px;
+  }
+
+  img {
+    width:500px;height:auto;
+    margin-bottom: 10px;
+  }
+
+  figure {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+}
